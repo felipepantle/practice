@@ -5,7 +5,6 @@ def fib(n):
         return 1
     return fib(n-1) + fib(n-2)
 
-
 print("demo fibonacci numbers")
 i = 0 
 while i < 20:
@@ -13,3 +12,16 @@ while i < 20:
     i += 1
 
 print("finished")
+
+def interactive_mode():
+    n = int(input("Enter how many fibonacci numbers you want to see: "))
+    i = 0 
+    while i < n:
+        print(fib(i))
+        i += 1
+
+
+
+interactive_mode()
+
+
